@@ -6,131 +6,166 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Duniya Ki Pahli Technology</title>
 <style>
-* { box-sizing: border-box; }
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f1f5f9;
-  color: #172033;
-}
-header {
-  background: #071b35;
-  color: white;
-  padding: 30px 15px;
-  text-align: center;
-}
-header h1 { font-size: 30px; }
-nav {
-  background: #123e70;
-  padding: 15px;
-  text-align: center;
-}
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 10px;
-  font-weight: bold;
-}
-.hero {
-  background: linear-gradient(120deg,#0753a5,#06b6d4);
-  color: white;
-  text-align: center;
-  padding: 60px 15px;
-}
-.hero h2 { font-size: 32px; }
-.container {
-  max-width: 1000px;
-  margin: 30px auto;
-  padding: 15px;
-}
-.container h2 { text-align: center; }
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
-  gap: 20px;
-}
-.card {
-  background: white;
-  padding: 22px;
-  border-radius: 12px;
-  box-shadow: 0 3px 12px #0001;
-}
-.card h3 { color: #0753a5; }
-.card p { line-height: 1.6; color: #475569; }
-.tag { color: #0891b2; font-weight: bold; }
-footer {
-  background: #071b35;
-  color: white;
-  text-align: center;
-  padding: 25px;
-  margin-top: 40px;
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f4f7fc;color:#172033}
+header{background:#07172e;color:white;padding:22px 5%;display:flex;align-items:center;gap:15px}
+.logo{width:55px;height:55px;border-radius:15px;background:linear-gradient(135deg,#00c6ff,#0753d1);display:grid;place-items:center;font-size:30px}
+header h1{font-size:23px;margin:0}
+header p{margin:5px 0;color:#a9d9ff;font-size:13px}
+nav{background:#102e55;padding:15px;text-align:center;position:sticky;top:0}
+nav a{color:white;text-decoration:none;margin:0 12px;font-weight:bold;font-size:14px}
+.hero{padding:75px 18px;text-align:center;color:white;background:linear-gradient(120deg,#071b48,#0755ad,#00a6c7)}
+.hero h2{font-size:36px;margin:0 0 15px}
+.hero p{font-size:17px;line-height:1.6}
+.hero a{display:inline-block;background:white;color:#0753a5;padding:13px 25px;border-radius:25px;text-decoration:none;font-weight:bold;margin-top:15px}
+.breaking{background:#07172e;color:white;padding:14px;text-align:center}
+.container{max-width:1100px;margin:35px auto;padding:0 16px}
+.heading{text-align:center;margin-bottom:25px}
+.heading h2{color:#0753a5;font-size:27px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+.card{background:white;border-radius:14px;overflow:hidden;box-shadow:0 5px 18px #0001;transition:.2s}
+.card:hover{transform:translateY(-5px)}
+.card img{width:100%;height:175px;object-fit:cover}
+.card-content{padding:18px}
+.tag{color:#087ec4;font-size:12px;font-weight:bold}
+.card h3{margin:10px 0;font-size:19px}
+.card p{color:#596579;line-height:1.6;font-size:14px}
+.about{background:#e5f2ff;padding:30px;border-radius:15px;line-height:1.8}
+footer{background:#07172e;color:white;text-align:center;padding:35px 15px;margin-top:45px}
+footer a{color:#75d5ff;text-decoration:none;margin:8px}
+@media(max-width:600px){
+header h1{font-size:19px}
+nav a{margin:0 6px;font-size:12px}
+.hero h2{font-size:28px}
 }
 </style>
 </head>
 <body>
 
 <header>
-<h1>🌐 Duniya Ki Pahli Technology</h1>
-<p>Your Daily Dose of Technology Updates</p>
+<div class="logo">🌐</div>
+<div>
+<h1>Duniya Ki Pahli Technology</h1>
+<p>Technology • Innovation • Digital World</p>
+</div>
 </header>
 
 <nav>
 <a href="#home">Home</a>
-<a href="#news">Technology</a>
-<a href="#about">About Us</a>
+<a href="#news">News</a>
+<a href="#gadgets">Gadgets</a>
+<a href="#about">About</a>
 <a href="#contact">Contact</a>
 </nav>
 
 <section class="hero" id="home">
 <h2>Welcome to Our Technology World!</h2>
-<p>Latest Technology News, Smartphones, Gadgets and Tech Tips.</p>
+<p>Your destination for Technology News, AI Updates,<br>Smartphones, Gadgets and Tech Tips.</p>
+<a href="#news">Explore Technology</a>
 </section>
 
-<div class="container" id="news">
-<h2>🚀 Latest Technology Updates</h2>
+<div class="breaking">
+⚡ TECHNOLOGY NEWS • GADGETS • AI • INNOVATION ⚡
+</div>
+
+<section class="container" id="news">
+<div class="heading">
+<h2>🚀 Technology News</h2>
+<p>Explore the latest topics from the world of technology.</p>
+</div>
+
 <div class="cards">
-
 <div class="card">
-<span class="tag">TECH NEWS</span>
-<h3>Latest Technology</h3>
-<p>Explore new technology, digital innovations and exciting updates from the tech world.</p>
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800" alt="Computer technology">
+<div class="card-content">
+<span class="tag">TECHNOLOGY</span>
+<h3>The Future of Technology</h3>
+<p>Discover how modern technology and innovation are changing our everyday lives.</p>
+</div>
 </div>
 
 <div class="card">
+<img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=800" alt="Smartphone">
+<div class="card-content">
 <span class="tag">SMARTPHONES</span>
-<h3>Mobile Technology</h3>
-<p>Discover smartphone features, mobile tips and information about new devices.</p>
+<h3>Smartphone World</h3>
+<p>Explore smartphone features, mobile technology and useful phone tips.</p>
+</div>
 </div>
 
 <div class="card">
+<img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800" alt="Artificial intelligence">
+<div class="card-content">
+<span class="tag">ARTIFICIAL INTELLIGENCE</span>
+<h3>Explore Artificial Intelligence</h3>
+<p>Learn about AI tools, automation and the future of intelligent technology.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800" alt="Laptop">
+<div class="card-content">
+<span class="tag">COMPUTERS</span>
+<h3>Laptop and Computer Updates</h3>
+<p>Find helpful computer information, software tips and digital guides.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800" alt="Smart gadgets">
+<div class="card-content">
 <span class="tag">GADGETS</span>
-<h3>Latest Gadgets</h3>
-<p>Learn about smart gadgets, computers and modern devices.</p>
+<h3>Cool Tech Gadgets</h3>
+<p>Discover useful gadgets and exciting electronic devices.</p>
+</div>
 </div>
 
 <div class="card">
-<span class="tag">TECH TIPS</span>
-<h3>Technology Tips</h3>
-<p>Get simple technology tips, tutorials and useful digital knowledge.</p>
+<img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800" alt="Digital world">
+<div class="card-content">
+<span class="tag">DIGITAL WORLD</span>
+<h3>Digital Innovation</h3>
+<p>Stay informed about digital tools, online trends and new ideas.</p>
 </div>
+</div>
+</div>
+</section>
 
+<section class="container" id="gadgets">
+<div class="heading">
+<h2>💡 Tech Tips</h2>
 </div>
+<div class="about">
+<h3>Learn Something New Every Day!</h3>
+<p>Get useful smartphone tips, internet safety advice, computer tutorials and technology guides in simple language.</p>
 </div>
+</section>
 
-<div class="container" id="about">
+<section class="container" id="about">
+<div class="heading">
 <h2>About Us</h2>
-<p>Welcome to Duniya Ki Pahli Technology. We share technology news, smartphone updates, gadget information, tutorials and useful tech tips.</p>
 </div>
+<div class="about">
+<h3>Welcome to Duniya Ki Pahli Technology!</h3>
+<p>We are here to share technology news, smartphone updates, gadget information, artificial intelligence, tutorials and useful technology tips.</p>
+<p>Our mission is to make technology easy and interesting for everyone.</p>
+</div>
+</section>
 
-<div class="container" id="contact">
+<section class="container" id="contact">
+<div class="heading">
 <h2>Contact Us</h2>
-<p>For questions and suggestions, please contact us.</p>
+</div>
+<div class="about">
+<p>Have a question or suggestion? We would love to hear from you.</p>
 <p>Email: Add your email address here.</p>
 </div>
+</section>
 
 <footer>
-<p>© 2026 Duniya Ki Pahli Technology</p>
-<p>Made with ❤️ for Technology Lovers</p>
+<h2>🌐 Duniya Ki Pahli Technology</h2>
+<p>Your Daily Dose of Technology Updates</p>
+<p>© 2026 Duniya Ki Pahli Technology. All Rights Reserved.</p>
 </footer>
 
 </body>
